@@ -1,35 +1,27 @@
-import { createContext, useState, useEffect } from 'react'
-import {Home} from './pages/home'
-import {NewPet} from './pages/new-pet/index'
-import { Deck } from './pages/deck'
-import { Study } from './pages/study'
-import { NewCard } from './pages/new-card'
-import { NewDeck } from './pages/new-deck'
-import { Login } from './pages/login'
+import { createContext, useState} from 'react'
 import GlobalStyle from './components/styleguide/atoms/global'
 import {BrowserRouter,Route, Switch} from 'react-router-dom'
 import {AuthContextProvider} from './contexts/AuthContext'
-import Navbar from './components/styleguide/molecules/Header'
-
-export const AuthContext = createContext({}) 
-function App() {
-  const [user,setUser] = useState()
+import SpacingProvider from './contexts/SpacingContext'
+import Navbar from './components/styleguide/molecules/navbar'
+import Home from './pages/home/index'
+import ScreenProvider from './contexts/Screen'
+const App = ()=>{
   return (
     <BrowserRouter>
-      <GlobalStyle/>
-      <Navbar/>
-      <AuthContextProvider>
-        <Switch id='switchTag'>
-          <Route path='/' exact component={Home}/>
-          <Route path='/deck/:id'  component={Deck}/>
-          <Route path='/study/:id'  component={Study}/>
-          <Route path='/new-card/:id'  component={NewCard}/>
-          <Route path='/new-deck'  component={NewDeck}/>
-          <Route path='/login'  component={Login}/>
-        </Switch>
-      </AuthContextProvider>
+      <ScreenProvider>
+      <SpacingProvider>
+        <AuthContextProvider>
+        <GlobalStyle/>
+        <Navbar/>
+          <Switch id='switchTag'>
+            <Route path='/' exact component={Home}/>
+          </Switch>
+        </AuthContextProvider>
+      </SpacingProvider>
+      </ScreenProvider>
     </BrowserRouter>
-  );
+  )
 }
 
 export default App;

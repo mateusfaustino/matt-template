@@ -17,7 +17,7 @@ const Column = styled.div`
     width:100%;
 `
 
-function Grid(props) {
+function GridLayout (props) {
     let colums = []
     for (let i = 0; i < props.Columns; i++) {
         colums.push(<Column ></Column>)
@@ -30,4 +30,4 @@ function Grid(props) {
         </Container>
     )
 }
-export default Grid
+export default GridLayout
