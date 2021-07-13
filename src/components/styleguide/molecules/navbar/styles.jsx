@@ -1,45 +1,28 @@
 import styled from "styled-components"
-import Spacing from "../../components/styleguide/atoms/spacing"
-import { useSpacing } from "../../contexts/SpacingContext"
-
+import { useSpacing } from "../../../../contexts/SpacingContext"
+import { palette } from "../../atoms/colors"
 const StyledContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:4px ${spacing.margin};
+    padding:4px ${props=>props.spacing.margin};
     right:0;
-    .nav__icon{
-        height:auto ;
-        width: 32px;
-        max-width:40px;
-        
-        &.nav__close{
-            display:${props => props.icon==='close' ? 'block' : 'none' } ;
-        }
-        &.nav__bars{
-            display:${props => props.icon==='open' ? 'block' : 'none' } ;
-        }
-        &:hover{
-            cursor: pointer;
-        }
-    }
-
-    @media screen and (min-width: 755px) {
-
-        .nav__icon {
-            display: none !important;
-        }
-        
-
-    }
+    transition:1s;
+    background:${palette.primary.main};
+    z-index:10000;
+    position:fixed;
+    top:0;
+    width:100%;
+    transform: translateY(${props=>props.isDisplayed?`0`:'-40px'});
 
 `
 
-const Container = (props)=>{
+const Nav = (props)=>{
+    const { spacing } = useSpacing()
     return(
-        <StyledContainer>
+        <StyledContainer isDisplayed={props.isDisplayed} spacing={spacing}>
             {props.children}
         </StyledContainer>
     )
 }
-export default Container
+export default Nav
