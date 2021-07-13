@@ -96,7 +96,7 @@ const Logo = (props) => {
     return (
         <Container className={props.isActive? "active": ""}>
             <Link to='/'>
-                <Brand><span id="spanM">M</span><span id="spanF">F</span></Brand>
+                <Brand></Brand>
             </Link>
         </Container>
     )

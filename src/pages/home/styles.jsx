@@ -15,9 +15,6 @@ const Container = (props)=>{
     return(
         <StyledContainer>
             {props.children}
-            <h1>
-                spacing: {spacing.margin}
-            </h1>
         </StyledContainer>
     )
 }
