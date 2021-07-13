@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
-import Logo from "./Logo"
-import Menu from "./Menu"
+import Logo from "./Logo/index"
+import Menu from "./Menu/index"
 import Spacing from '../../atoms/spacing';
 import NavbarIcon from '../../atoms/navbarIcon';
 import { useScreen } from '../../../../contexts/Screen';
@@ -16,9 +16,10 @@ const Navbar = (props) => {
                 isDisplayed={
                     isActive ? true : scrollDirection=='up'? true : scrollDirection=='down'?false:true
                 }
+                isActive={isActive}
             >
-                <Logo isActive={isActive} setIsActive={()=>setIsActive(false)}/>
-                <Menu appLinks={props.appLinks} isActive={isActive} setIsActive={()=>setIsActive(false)}/>
+                <Logo/>
+                <Menu isActive={isActive} setIsActive={()=>setIsActive(false)}/>
                 <NavbarIcon close={isActive} onClick={()=>setIsActive(!isActive)}/>
             </Nav>
         

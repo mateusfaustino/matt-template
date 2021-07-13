@@ -1,4 +1,3 @@
-import { createContext, useState} from 'react'
 import GlobalStyle from './components/styleguide/atoms/global'
 import {BrowserRouter,Route, Switch} from 'react-router-dom'
 import {AuthContextProvider} from './contexts/AuthContext'

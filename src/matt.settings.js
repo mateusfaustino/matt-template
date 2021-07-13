@@ -37,5 +37,5 @@ const settings = {
     }    
   }
   
+  export const menu = settings.menu 
   export default settings;
-  

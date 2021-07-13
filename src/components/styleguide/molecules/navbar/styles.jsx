@@ -8,7 +8,7 @@ const StyledContainer = styled.div`
     padding:4px ${props=>props.spacing.margin};
     right:0;
     transition:1s;
-    background:${palette.primary.main};
+    background:${props=>props.isActive? palette.primary.dark :palette.primary.main};
     z-index:10000;
     position:fixed;
     top:0;
@@ -20,7 +20,7 @@ const StyledContainer = styled.div`
 const Nav = (props)=>{
     const { spacing } = useSpacing()
     return(
-        <StyledContainer isDisplayed={props.isDisplayed} spacing={spacing}>
+        <StyledContainer isActive={props.isActive} isDisplayed={props.isDisplayed} spacing={spacing}>
             {props.children}
         </StyledContainer>
     )
