@@ -19,11 +19,7 @@ const StyledContainer = styled.div`
             transform-origin:center;
             transform-box:fill-box;
         }
-        #wave-center{
-            animation: center-wave 2s ease-in-out infinite alternate;
-            transform-origin:center;
-            transform-box:fill-box;
-        }
+        
         #wave-down{
             animation: down-wave 2s ease-in-out infinite alternate;
             transform-origin:center;
@@ -41,26 +37,19 @@ const StyledContainer = styled.div`
     
     @keyframes up-wave {
         from{
-            transform:scale(1) translateX(2px) rotate(0deg) ;
+            transform:scale(1) translateX(1px) rotate(0deg) ;
         }
         to{
-            transform:scale(1) translateX(0) rotate(0deg) ;
+            transform:scale(1) translateX(-1px) rotate(0deg) ;
         }
     }
-    @keyframes center-wave {
-        from{
-            transform:scale(1) translateX(-2px) rotate(0deg) ;
-        }
-        to{
-            transform:scale(1) translateX(0) rotate(0deg) ;
-        }
-    }
+    
     @keyframes down-wave {
         from{
-            transform:scale(1) translateX(2px) rotate(0deg) ;
+            transform:scale(1) translateX(-1px) rotate(0deg) ;
         }
         to{
-            transform:scale(1) translateX(0) rotate(0deg) ;
+            transform:scale(1) translateX(1px) rotate(0deg) ;
         }
     }
 `

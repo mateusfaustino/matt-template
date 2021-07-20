@@ -2,7 +2,7 @@ import styled from 'styled-components'
 const StyledContainer = styled.div`
         svg{
             width:auto;
-            height:100%;
+            height:44px;
             
         }
 &.onDark{
@@ -10,9 +10,7 @@ const StyledContainer = styled.div`
         #wave-up{
             fill:#fff;
         }
-        #wave-center{
-            fill:#fff;
-        }
+        
         #wave-down{
             fill:#fff;
         }

@@ -8,7 +8,7 @@ padding: 45px 40px 8px;
 flex-direction: column;
 background:${palette.primary.dark};
 position: fixed;
-top: 40px;
+top: 52px;
 left: 0;
 width: 100%;
 height: calc(100vh - 40px);

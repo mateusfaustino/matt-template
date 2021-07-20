@@ -5,7 +5,7 @@ const StyledContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:4px ${props=>props.spacing.margin};
+    padding:2px ${props=>props.spacing.margin};
     right:0;
     transition:1s;
     background:${props=>props.isActive? palette.primary.dark :palette.primary.main};
@@ -13,7 +13,7 @@ const StyledContainer = styled.div`
     position:fixed;
     top:0;
     width:100%;
-    transform: translateY(${props=>props.isDisplayed?`0`:'-40px'});
+    transform: translateY(${props=>props.isDisplayed?`0`:'-52px'});
 
 `
 
