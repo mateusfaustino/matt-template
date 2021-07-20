@@ -7,13 +7,13 @@ const StyledContainer = styled.div`
     justify-content: space-between;
     padding:2px ${props=>props.spacing.margin};
     right:0;
-    transition:1s;
     background:${props=>props.isActive? palette.primary.dark :palette.primary.main};
     z-index:10000;
     position:fixed;
     top:0;
     width:100%;
     transform: translateY(${props=>props.isDisplayed?`0`:'-52px'});
+    transition:0.5s;
 
 `
 

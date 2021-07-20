@@ -18,7 +18,7 @@ const Navbar = (props) => {
                 }
                 isActive={isActive}
             >
-                <Logo/>
+                <Logo isActive={isActive}/>
                 <Menu isActive={isActive} setIsActive={()=>setIsActive(false)}/>
                 <NavbarIcon close={isActive} onClick={()=>setIsActive(!isActive)}/>
             </Nav>
