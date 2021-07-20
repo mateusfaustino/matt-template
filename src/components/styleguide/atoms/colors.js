@@ -9,11 +9,11 @@
         onLightText: '#000',
     },
     secondary: {
-        main: '#1a237e',
-        light: '#534bae',
-        dark: '#000051',
-        onMainText:'#fff',
-        onDarkText: '#fff',
+        main: '#ffea00',
+        light: '#ffff56',
+        dark: '#c7b800',
+        onMainText:'#000',
+        onDarkText: '#000',
         onLightText: '#000',
     },
     error:{
