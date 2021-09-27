@@ -1,25 +1,24 @@
- import breakpoints from "./breakpoints"
- import colors from "./colors"
- import { handleDefault } from "../functions"
+ import breakpoints from "../breakpoints"
+ import {colors} from "../Colors"
+ import { handleDefault } from "../../functions"
 
- const header_0 = (color) =>`
-    color: ${handleDefault(color,colors.text_onLight)};
+ const header_0 = `
     font-size: 48px;
     line-height: 110%;
+
     @media (min-width:${breakpoints.mobile}) {
         font-size: 56px;
     }`
 
-const header_1 = (color) =>`
-    color: ${handleDefault(color,colors.text_onLight)};
+const header_1 = `
+    
     font-size: 32px;
     line-height: 120%;
     @media (min-width:${breakpoints.mobile}) {
         font-size: 40px;
     }`
 
-const header_2 = (color) =>`
-    color: ${handleDefault(color,colors.text_onLight)};
+const header_2 =`
     font-size: 24px;
     line-height: 120%;
 
@@ -27,17 +26,14 @@ const header_2 = (color) =>`
         font-size: 32px;
     }
 `
-const header_3 = (color) =>`
-    color: ${handleDefault(color,colors.text_onLight)};
+const header_3 =`
     font-size: 20px;
     line-height: 120%;
-
     @media (min-width:${breakpoints.mobile}) {
         font-size: 22px;
     }
 `
-const header_4 = (color) =>`
-    color: ${handleDefault(color,colors.text_onLight)};
+const header_4 =`
     font-size: 20px;
     line-height: 120%;
 
@@ -45,9 +41,7 @@ const header_4 = (color) =>`
         font-size: 24px;
     }
 `
-const header_5 = (color) =>`
-    color: ${handleDefault(color,colors.text_onLight)};
-    color: $color;
+const header_5 =`
     font-size: 18px;
     line-height: 120%;
 
@@ -55,8 +49,7 @@ const header_5 = (color) =>`
         font-size: 22px;
     }
 `
-const paragraph = (color) =>`
-    color: ${handleDefault(color,colors.text_onLight)};
+const paragraph = `
     font-size: 14px;
     line-height: 150%;
 
@@ -64,8 +57,7 @@ const paragraph = (color) =>`
         font-size: 16px;
     }
 `
-const paragraph_bold = (color) =>`
-    color: ${handleDefault(color,colors.text_onLight)};
+const paragraph_bold = `
     font-weight: bold;
     font-size: 14px;
     line-height: 150%;
@@ -74,8 +66,7 @@ const paragraph_bold = (color) =>`
         font-size: 16px;
     }
 `
-const paragraph_italic = (color) =>`
-    color: ${handleDefault(color,colors.text_onLight)};
+const paragraph_italic = `
     font-style: italic;
     font-size: 14px;
     line-height: 150%;
@@ -84,8 +75,7 @@ const paragraph_italic = (color) =>`
         font-size: 16px;
     }
 `
-const paragraph_capitalized = (color) =>`
-    color: ${handleDefault(color,colors.text_onLight)};
+const paragraph_capitalized = `
     font-size: 14px;
     line-height: 150%;
     text-transform: uppercase;
@@ -94,8 +84,7 @@ const paragraph_capitalized = (color) =>`
         font-size: 16px;
     }
 `
-const small = (color) =>`
-    color: ${handleDefault(color,colors.text_onLight)};
+const small = `
     font-size: 12px;
     line-height: 150%;
 
@@ -103,8 +92,7 @@ const small = (color) =>`
         font-size: 14px;
     }
 `
-const small_bold = (color) =>`
-    color: ${handleDefault(color,colors.text_onLight)};
+const small_bold =`
     font-weight: bold;
     font-size: 12px;
     line-height: 150%;
@@ -113,8 +101,8 @@ const small_bold = (color) =>`
         font-size: 14px;
     }
 `
-const tiny_italic = (color) =>`
-    color: ${handleDefault(color,colors.text_onLight)};
+const tiny_italic =`
+    
     font-style: italic;
     font-weight: 500;
     font-size: 11px;
@@ -126,8 +114,8 @@ const tiny_italic = (color) =>`
     }
 `
 
-const scratched = (color) =>`
-    color: ${handleDefault(color,colors.text_onLight)};
+const scratched = `
+    
     font-size: 12px;
     line-height: 150%;
     text-decoration-line: line-through;

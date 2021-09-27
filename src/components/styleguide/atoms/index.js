@@ -2,7 +2,7 @@ import Colors from './colors';
 import Shadows from './shadows';
 import Typographies from './typography';
 import Animations, {animation as animes}from './animations';
-import Borders from './borders';
+import Borders from './Borders';
 import Breakpoints from './breakpoints';
 import background from './backgrounds';
 import Scroll from './scroll';

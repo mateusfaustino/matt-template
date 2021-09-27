@@ -1,12 +1,12 @@
 import styled from 'styled-components'
-import { palette } from '../../../atoms/colors'
+import { colors } from '../../../atoms/Colors'
 const StyledContainer = styled.ul`
 display: flex;
 justify-content: flex-start;
 align-items: flex-start;
 padding: 50px 40px 8px;
 flex-direction: column;
-background:${palette.primary.dark};
+background:${colors.primary.dark};
 position: fixed;
 top: 52px;
 right: 0;

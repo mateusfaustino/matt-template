@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { useSpacing } from "../../../../contexts/SpacingContext"
-import { palette } from "../../atoms/colors"
+import { colors } from "../../atoms/Colors"
 const StyledContainer = styled.div`
     display: flex;
     align-items: center;
@@ -17,7 +17,7 @@ export const NavWrapper = styled.div`
     top:0;
     width:100%;
     right:0;
-    background:${props=>props.isActive? palette.primary.dark :palette.primary.main};
+    background:${props=>props.isActive? colors.primary.dark :colors.primary.main};
     transition:0.5s;
     transform: translateY(${props=>props.isDisplayed?`0`:'-52px'});
     padding:2px ${props=>props.spacing.margin};

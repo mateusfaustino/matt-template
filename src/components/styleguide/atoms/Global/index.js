@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import {palette} from './colors';
-import scroll from './scroll'
+import {colors} from '../Colors';
+import scroll from '../scroll';
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -11,11 +11,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body{
-    background: ${(props)=>props.theme=='dark'? palette.background.dark:palette.background.main};
-    color:${(props)=>props.theme=='dark'? palette.background.onDarkText:palette.background.onLightText};
+    background: ${(props)=>props.theme=='dark'? colors.background.dark:colors.background.main};
+    color:${(props)=>props.theme=='dark'? colors.background.onDarkText:colors.background.onLightText};
     ${scroll}
-  }
-  #switchTag{
   }
   li{
     list-style:none;
@@ -25,9 +23,9 @@ const GlobalStyle = createGlobalStyle`
     color:#000;
   }
 `
-const Global = (props) => 
+const Global = ({theme}) => 
   <GlobalStyle
-    theme={props.theme}
+    theme={theme}
   />
     
 export default Global

@@ -1,9 +1,9 @@
-import GlobalStyle from './components/styleguide/atoms/global'
 import {BrowserRouter,Route, Switch} from 'react-router-dom'
 import SpacingProvider from './contexts/SpacingContext'
- import Navbar from './components/styleguide/molecules/navbar'
- import Home from './pages/home/index'
- import ScreenProvider from './contexts/Screen'
+import ScreenProvider from './contexts/Screen'
+import GlobalStyle from './components/styleguide/atoms/Global'
+import Navbar from './components/styleguide/molecules/navbar'
+import Home from './pages/home/index'
 const App = ()=>{
   return (
     <BrowserRouter>

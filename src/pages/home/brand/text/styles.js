@@ -1,12 +1,12 @@
 import styled from 'styled-components'
-import  typography  from '../../../../components/styleguide/atoms/typography'
-import { palette } from '../../../../components/styleguide/atoms/colors'
+import  typography  from '../../../../components/styleguide/atoms/Typographies'
+import { colors } from '../../../../components/styleguide/atoms/Colors'
 const StyledContainer = styled.div `
     display:flex;
     flex-direction:column;
     align-items:center;
     ${typography.header2}
-    color: ${palette.primary.dark};
+    color: ${colors.primary.dark};
     width:auto;
 
     #text_Mateus{
@@ -14,7 +14,7 @@ const StyledContainer = styled.div `
     }
     #slogan{
         font-size:20px;
-        color:${palette.primary.light};
+        color:${colors.primary.light};
         animation: name 3s ease 1s both ;
         line-height: 60%;
     }
