@@ -3,7 +3,8 @@ import Container from './styles'
 const Text = () => {
     return ( 
         <Container >
-            let's find new lands!
+                <div id='text_Mateus'>Mateus Faustino</div>
+                <div id='slogan'>let's find new lands</div>
         </Container>
     )
 }

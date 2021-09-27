@@ -21,11 +21,13 @@ const StyledContainer = styled.li`
             padding:0;
             &:not(:last-child){
                 border-bottom: none;
+                a{
+                    margin-right: 16px;
+                }
             }
         a{
             display: flex;
             color: #fff;
-            margin-right: 16px;
             font-family: sans-serif;
             font-weight: 600;
         }

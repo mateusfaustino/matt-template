@@ -5,15 +5,22 @@ const StyledContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:2px ${props=>props.spacing.margin};
-    right:0;
-    background:${props=>props.isActive? palette.primary.dark :palette.primary.main};
+    width:100%;
+    max-width:700px;
+`
+export const NavWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index:10000;
     position:fixed;
     top:0;
     width:100%;
-    transform: translateY(${props=>props.isDisplayed?`0`:'-52px'});
+    right:0;
+    background:${props=>props.isActive? palette.primary.dark :palette.primary.main};
     transition:0.5s;
+    transform: translateY(${props=>props.isDisplayed?`0`:'-52px'});
+    padding:2px ${props=>props.spacing.margin};
 
 `
 

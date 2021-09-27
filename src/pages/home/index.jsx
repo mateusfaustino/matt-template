@@ -1,14 +1,13 @@
 import React,{useEffect, useState, useContext} from "react";
-import { AuthContext } from "../../contexts/AuthContext";
 import Container from './styles'
 import Brand from './brand/index'
-
+import SocialBar from './SocialBar'
 
 const Home = () => {
-    const {user} = useContext(AuthContext)
     return(
         <Container>
             <Brand/>
+            <SocialBar/>
         </Container>
     )
 }

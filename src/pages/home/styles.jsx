@@ -6,14 +6,16 @@ const StyledContainer = styled.div`
     flex-direction:column;
     align-items:center;
     height:100vh;
-    margin-top: 48px;
+    margin: 50px ${props=>props.margin};
     
+
 `
 
 const Container = (props)=>{
     const {spacing, Grid} = useSpacing()
+    const margin = spacing.margin
     return(
-        <StyledContainer>
+        <StyledContainer margin={margin}>
             {props.children}
         </StyledContainer>
     )

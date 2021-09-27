@@ -8,21 +8,43 @@ const StyledContainer = styled.div `
     ${typography.header2}
     color: ${palette.primary.dark};
     width:auto;
-    animation: apear 3s ease 4s both ;
-    @keyframes apear{
-        from{
-            opacity:0;
+
+    #text_Mateus{
+        animation: name 3s ease 0.4s both ;
+    }
+    #slogan{
+        font-size:20px;
+        color:${palette.primary.light};
+        animation: name 3s ease 1s both ;
+        line-height: 60%;
+    }
+    
+    @keyframes name{
+        0%{
+            opacity:0 ;
         }
-        to{
-            opacity:1;
+        20%{
+            opacity:0  ;
+        }
+        40%{
+            opacity:0 ;
+        }
+        60%{
+            opacity:0 ;
+        }
+        80%{
+            opacity:0 ;
+        }
+        100%{
+            opacity:1 ;
         }
     }
+    
 `
 const Container = (props) => {
     return ( 
-        <StyledContainer > {
-            props.children
-        } 
+        <StyledContainer > 
+            {props.children} 
         </StyledContainer>
     )
 }
